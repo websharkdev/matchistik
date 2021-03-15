@@ -1,147 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="matchistik" />
-    <meta name="description" content="123" />
-    <meta name="keywords" content="213" />
-    <meta name="robots" content="index, follow" />
-    <meta name="language" content="English" />
-    <meta name="revisit-after" content="2 days" />
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/main.min.css" />
-    <title>matchistik</title>
-  </head>
-  <body>
-    <!-- Start HEADER -->
 
-    <header
-      class="header"
-      style="
-        background: url(./img/bg/header-bg__leaf.png) center right
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content="matchistik" />
+  <meta name="description" content="123" />
+  <meta name="keywords" content="213" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="2 days" />
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+  <title>matchistik</title>
+</head>
+
+<body>
+  <!-- Start HEADER -->
+
+  <header class="header" style="
+        background: url(./img/bg/header-bg__leaf.png)
           no-repeat;
+        background-position: center right;
         background-size: cover;
-      "
-    >
+      ">
     <div class="header-leaf__bottom"></div>
-        <div class="header__menu">
-          <div class="header__menu-logo">
-            <img src="./img/Logo.png" alt="logo" />
-          </div>
+    <div class="header__menu">
+      <div class="header__menu-logo">
+        <img src="./img/Logo.png" alt="logo" />
+      </div>
 
-          <div class="header__menu-contacts">
-            <a href="tel:83832583888">8 (383) 258 38 88</a>
-            <a href="mailto:machistika@gmail.com">machistika@gmail.com</a>
-          </div>
+      <div class="header__menu-contacts">
+        <a href="tel:83832583888">8 (383) 258 38 88</a>
+        <a href="mailto:machistika@gmail.com">machistika@gmail.com</a>
+      </div>
 
-          <div class="header__menu-box">
-            <ul>
-              <li class="header__menu-item"><a href="#">Каталог</a></li>
-              <li class="header__menu-item"><a href="#">Machistik</a></li>
-              <li class="header__menu-item">
-                <a href="#">Новые возможности</a>
-              </li>
-              <li class="header__menu-item">
-                <a href="#">Эффективно против</a>
-              </li>
-              <li class="header__menu-item"><a href="#">До / После</a></li>
-            </ul>
-          </div>
+      <div class="header__menu-box">
+        <ul>
+          <li class="header__menu-item"><a href="#">Каталог</a></li>
+          <li class="header__menu-item"><a href="#">Machistik</a></li>
+          <li class="header__menu-item">
+            <a href="#">Новые возможности</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#">Эффективно против</a>
+          </li>
+          <li class="header__menu-item"><a href="#">До / После</a></li>
+        </ul>
+      </div>
 
-          <div class="header__menu-basket">
-			<a href="#">
-				<span>Корзина</span>
-				<div class="header__menu-basket-img">
-					<div class="header__basket-img">
-						<img src="./img/svg/bascket.svg" alt="basket" />
-					</div>
-					<div class="header__basket-counter">
-						<span>1</span>
-					</div>
-				</div>
-			</a>
+      <div class="header__menu-basket">
+        <a href="#" data-remodal-target="header__basket-modal">
+          <span class="basket__item-header">Корзина</span>
+          <div class="header__menu-basket-img">
+            <div class="header__basket-img">
+              <img src="./img/svg/bascket.svg" alt="basket" />
+            </div>
+            <div class="header__basket-counter">
+              <span>1</span>
+            </div>
           </div>
-        </div>
+        </a>
+      </div>
+    </div>
 
-        <!-- END HEADER__MENU -->
-      <div class="container">
-        <div class="header__content">
-          <div class="header__content-text">
-            <div class="header__content-undertitle">
-				<h2>ПРОФЕССИОНАЛЬНАЯ</h2>
-			</div>
-            <div class="header__content-h">
-				<h1>чистка <div><img src="./img/icon/leaf-h__1.png" alt="leaf icon"><span>лица</span></div></span> в <div><img src="./img/icon/leaf-h__2.png" id="header__content-h-middle" alt="leaf icon"><span>домашних</span></div> <span>условиях</span><img src="./img/icon/leaf-h__3.png" alt="leaf icon"></h1>
-			</div>
+    <div class="mobile__menu hide">
+      <div class="header__menu-logo mobile__menu-logo">
+        <img src="./img/Logo.png" alt="logo" />
+      </div>
+
+      <div class="mobile__menu-contacts">
+        <a href="tel:83832583888">8 (383) 258 38 88</a>
+        <a href="mailto:machistika@gmail.com">machistika@gmail.com</a>
+      </div>
+      <div class="header__menu-box mobile__menu-box">
+        <ul>
+          <li class="header__menu-item mobile__menu-item"><a href="#">Каталог</a></li>
+          <li class="header__menu-item mobile__menu-item"><a href="#">Machistik</a></li>
+          <li class="header__menu-item mobile__menu-item">
+            <a href="#">Новые возможности</a>
+          </li>
+          <li class="header__menu-item mobile__menu-item">
+            <a href="#">Эффективно против</a>
+          </li>
+          <li class="header__menu-item mobile__menu-item"><a href="#">До / После</a></li>
+        </ul>
+      </div>
+
+      <div class="hr"></div>
+      <!-- <div class="mobile__menu-basket">
+        <a href="#">
+          <span class="basket__item-header" data-remodal-target="header__basket-modal">Корзина</span>
+          <div class="mobile__menu-basket-img">
+            <div class="header__basket-img">
+              <img src="./img/svg/bascket.svg" alt="basket" />
+            </div>
+            <div class="header__basket-counter">
+              <span>1</span>
+            </div>
           </div>
+        </a>
+      </div> -->
+    </div>
 
-          <div class="header__content-listitems">
-            <ul>
-              <li>
-                <img
-                  src="./img/icon/health.png"
-                  alt="health icon"
-                />Безболезненная процедура
-              </li>
-              <li>
-                <img src="./img/icon/face.png" alt="face icon" />Улучшает цвет
-                лица
-              </li>
-              <li>
-                <img src="./img/icon/safe.png" alt="safe icon" />Полностью
-                безопасно для кожи
-              </li>
-              <li>
-                <img src="./img/icon/alarm.png" alt="alarm icon" />
-                Предупреждает образование угрей
-              </li>
-            </ul>
+    <!-- END HEADER__MENU -->
+    <div class="container">
+      <div class="header__content">
+        <div class="header__content-text">
+          <div class="header__content-undertitle">
+            <h2>ПРОФЕССИОНАЛЬНАЯ</h2>
           </div>
-
-          <div class="header__content-btn">
-            <button class="primary-btn">
-				<a href="#">
-					<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M12.7654 13.4814H8.32207C5.7102 13.4814 3.59204 11.3553 3.59204 8.75135V2.56409H14.788C16.2851 2.56409 17.4955 3.78243 17.4955 5.27151V8.75135C17.5034 11.3553 15.3773 13.4814 12.7654 13.4814ZM4.70686 3.67891V8.75135C4.70686 10.7421 6.33132 12.3666 8.32207 12.3666H12.7654C14.7562 12.3666 16.3806 10.7421 16.3806 8.75135V5.27151C16.3806 4.39558 15.664 3.67891 14.788 3.67891H4.70686Z"
-							fill="#3A5244" />
-						<path
-							d="M13.3069 15C12.9964 15 12.7495 15.2469 12.7495 15.5574C12.7495 15.868 12.9964 16.1148 13.3069 16.1148C13.6175 16.1148 13.8643 15.868 13.8643 15.5574C13.8643 15.2548 13.6175 15 13.3069 15Z"
-							fill="#3A5244" />
-						<path
-							d="M7.78861 15C7.47805 15 7.2312 15.2469 7.2312 15.5574C7.2312 15.868 7.47805 16.1148 7.78861 16.1148C8.09917 16.1148 8.34602 15.868 8.34602 15.5574C8.33806 15.2548 8.09121 15 7.78861 15Z"
-							fill="#3A5244" />
-						<path
-							d="M4.1495 5.47059C3.83894 5.47059 3.59209 5.22373 3.59209 4.91318V2.70742C3.59209 1.83149 2.87542 1.11482 1.99948 1.11482H1.16337C0.85281 1.11482 0.605957 0.867969 0.605957 0.557411C0.605957 0.246854 0.85281 0 1.16337 0H1.99948C3.49653 0 4.70691 1.21834 4.70691 2.70742V4.91318C4.70691 5.21577 4.46005 5.47059 4.1495 5.47059Z"
-							fill="#3A5244" />
-					</svg>
-					<span>ЗАКАЗАТЬ</span>
-				</a>
-            </button>
+          <div class="header__content-h">
+            <h1>чистка <div><img src="./img/icon/leaf-h__1.png" alt="leaf icon"><span>лица</span></div></span> в <div>
+                <img src="./img/icon/leaf-h__2.png" id="header__content-h-middle" alt="leaf icon"><span>домашних</span>
+              </div> <span>условиях</span><img src="./img/icon/leaf-h__3.png" alt="leaf icon"></h1>
           </div>
         </div>
 
-        <!-- END HEADER__CONTENT -->
-        <div class="header__predictor">
-          <img src="./img/machistik.png" alt="predictor">
+        <div class="header__content-listitems">
+          <ul>
+            <li>
+              <img src="./img/icon/health.png" alt="health icon" />Безболезненная процедура
+            </li>
+            <li>
+              <img src="./img/icon/face.png" alt="face icon" />Улучшает цвет
+              лица
+            </li>
+            <li>
+              <img src="./img/icon/safe.png" alt="safe icon" />Полностью
+              безопасно для кожи
+            </li>
+            <li>
+              <img src="./img/icon/alarm.png" alt="alarm icon" />
+              Предупреждает образование угрей
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__content-btn">
+          <button class="primary-btn">
+            <a href="#">
+              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.7654 13.4814H8.32207C5.7102 13.4814 3.59204 11.3553 3.59204 8.75135V2.56409H14.788C16.2851 2.56409 17.4955 3.78243 17.4955 5.27151V8.75135C17.5034 11.3553 15.3773 13.4814 12.7654 13.4814ZM4.70686 3.67891V8.75135C4.70686 10.7421 6.33132 12.3666 8.32207 12.3666H12.7654C14.7562 12.3666 16.3806 10.7421 16.3806 8.75135V5.27151C16.3806 4.39558 15.664 3.67891 14.788 3.67891H4.70686Z"
+                  fill="#3A5244" />
+                <path
+                  d="M13.3069 15C12.9964 15 12.7495 15.2469 12.7495 15.5574C12.7495 15.868 12.9964 16.1148 13.3069 16.1148C13.6175 16.1148 13.8643 15.868 13.8643 15.5574C13.8643 15.2548 13.6175 15 13.3069 15Z"
+                  fill="#3A5244" />
+                <path
+                  d="M7.78861 15C7.47805 15 7.2312 15.2469 7.2312 15.5574C7.2312 15.868 7.47805 16.1148 7.78861 16.1148C8.09917 16.1148 8.34602 15.868 8.34602 15.5574C8.33806 15.2548 8.09121 15 7.78861 15Z"
+                  fill="#3A5244" />
+                <path
+                  d="M4.1495 5.47059C3.83894 5.47059 3.59209 5.22373 3.59209 4.91318V2.70742C3.59209 1.83149 2.87542 1.11482 1.99948 1.11482H1.16337C0.85281 1.11482 0.605957 0.867969 0.605957 0.557411C0.605957 0.246854 0.85281 0 1.16337 0H1.99948C3.49653 0 4.70691 1.21834 4.70691 2.70742V4.91318C4.70691 5.21577 4.46005 5.47059 4.1495 5.47059Z"
+                  fill="#3A5244" />
+              </svg>
+              <span>ЗАКАЗАТЬ</span>
+            </a>
+          </button>
         </div>
       </div>
 
-      <div class="container">
-        <div class="video">
-          <div class="video__box">
-            <div class="video__box-text">
-              <h2>Мачистик</h2>
-              <p>современный девайс для очищения кожи лица. Для тех, кто ценит время и деньги</p>
-            </div>
-            
-            <div class="video__box-leaf">
-              <img src="./img/icon/leaf__video.png" alt="leaf video">
-            </div>
+      <!-- END HEADER__CONTENT -->
+      <div class="header__predictor">
+        <img src="./img/machistik.png" alt="predictor">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="video">
+        <div class="video__box">
+          <div class="video__box-text">
+            <h2>Мачистик</h2>
+            <p>современный девайс для очищения кожи лица. Для тех, кто ценит время и деньги</p>
           </div>
 
-          <div class="video__item">
+          <div class="video__box-leaf">
+            <img src="./img/icon/leaf__video.png" alt="leaf video">
+          </div>
+        </div>
+
+        <div class="video__item">
+          <a href="#" class="video__img-link">
+            <img src="./img/bg/video__bg.png" alt="video__bg">
+            <div class="video__item-btn">
+              <div class="video__item-triangle">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- End HEADER + Video -->
+
+  <div class="remodal basket__modal" data-remodal-id="header__basket-modal">
+    <div class="basket__wrapper">
+      <div class="basket__left">
+        <img src="./img/modal/machistik.png" alt="machistik bg">
+      </div>
+      <div class="basket__right">
+        <div class="basket__modal-info">
+          <h2>Мачистик набор с гелем</h2>
+          <p>
+            Блокировка развития микроорганизмов на поверхности кожи (обработка рук, молодежная угревая сыпь, царапины,
+            проявления воспалительного характера или иных повреждения кожного покрова). Устранение зуда, возникающее при
+            укусах насекомых (мошка, комары).
+          </p>
+          <div class="hr"></div>
+          <h6>В набор входит</h6>
+          <div class="basket__modal-production">
+            <img src="./img/modal/production/matchistic_1.png" alt="matchistic_1">
+          </div>
+        </div>
+
+        <div class="basket__modal-btn">
+          <button class="modal-btn">
+            В корзину за 1 290р
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start catalog -->
+
+  <section class="catalog">
+    <div class="container">
+      <div class="catalog__wrapper">
+        <div class="catalog__h primary-h">
+          <h2>КАТАЛОГ</h2>
+        </div>
+        <div class="catalog__box">
+          <div class="catalog__box-item catalog__item">
+            <div class="catalog__item-status">
+              <div class="New">
+                <h6>New</h6>
+              </div>
+              <div class="Sale">
+                <h6>Sale</h6>
+              </div>
+            </div>
+
+            <div class="catalog__item-img">
+              <img src="./img/production/matchistic_1.png" alt="production img">
+            </div>
+
+            <div class="catalog__item-price">
+              <div class="newPrice">
+                790р
+              </div>
+              <div class="oldPrice">
+                990р
+              </div>
+
+              <div class="basket__catalog">
+                <div class="basket__catalog-img">
+                  <a href="#">
+                    <img src="./img/svg/basket__catalog.svg" alt="basket__catalog">
+                  </a>
+                </div>
+
+                <div class="basket__catalog-government">
+                  <span>+</span>
+                  <span class="price-counter">3</span>
+                  <span>-</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog__item-h">
+              <h5>Мачистик</h5>
+            </div>
+
+          </div>
+          <div class="catalog__box-item catalog__item">
+            <div class="catalog__item-status">
+              <div class="New">
+                <h6>New</h6>
+              </div>
+              <div class="Sale">
+                <h6>Sale</h6>
+              </div>
+            </div>
+
+            <div class="catalog__item-img">
+              <img src="./img/production/matchistic_1.png" alt="production img">
+            </div>
+
+            <div class="catalog__item-price">
+              <div class="newPrice">
+                790р
+              </div>
+              <div class="oldPrice">
+                990р
+              </div>
+
+              <div class="basket__catalog">
+                <div class="basket__catalog-img">
+                  <a href="#">
+                    <img src="./img/svg/basket__catalog.svg" alt="basket__catalog">
+                  </a>
+                </div>
+
+                <div class="basket__catalog-government">
+                  <span>+</span>
+                  <span class="price-counter">3</span>
+                  <span>-</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog__item-h">
+              <h5>Мачистик</h5>
+            </div>
+
+          </div>
+          <div class="catalog__box-item catalog__item">
+            <div class="catalog__item-status">
+              <div class="New">
+                <h6>New</h6>
+              </div>
+              <div class="Sale">
+                <h6>Sale</h6>
+              </div>
+            </div>
+
+            <div class="catalog__item-img">
+              <img src="./img/production/matchistic_1.png" alt="production img">
+            </div>
+
+            <div class="catalog__item-price">
+              <div class="newPrice">
+                790р
+              </div>
+              <div class="oldPrice">
+                990р
+              </div>
+
+              <div class="basket__catalog">
+                <div class="basket__catalog-img">
+                  <a href="#">
+                    <img src="./img/svg/basket__catalog.svg" alt="basket__catalog">
+                  </a>
+                </div>
+
+                <div class="basket__catalog-government">
+                  <span>+</span>
+                  <span class="price-counter">3</span>
+                  <span>-</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog__item-h">
+              <h5>Мачистик</h5>
+            </div>
+
+          </div>
+          <div class="catalog__box-item catalog__item">
+            <div class="catalog__item-status">
+              <div class="New">
+                <h6>New</h6>
+              </div>
+              <div class="Sale">
+                <h6>Sale</h6>
+              </div>
+            </div>
+
+            <div class="catalog__item-img">
+              <img src="./img/production/matchistic_1.png" alt="production img">
+            </div>
+
+            <div class="catalog__item-price">
+              <div class="newPrice">
+                790р
+              </div>
+              <div class="oldPrice">
+                990р
+              </div>
+
+              <div class="basket__catalog">
+                <div class="basket__catalog-img">
+                  <a href="#">
+                    <img src="./img/svg/basket__catalog.svg" alt="basket__catalog">
+                  </a>
+                </div>
+
+                <div class="basket__catalog-government">
+                  <span>+</span>
+                  <span class="price-counter">3</span>
+                  <span>-</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog__item-h">
+              <h5>Мачистик</h5>
+            </div>
+
+          </div>
+          <div class="catalog__box-item catalog__item">
+            <div class="catalog__item-status">
+              <div class="New">
+                <h6>New</h6>
+              </div>
+              <div class="Sale">
+                <h6>Sale</h6>
+              </div>
+            </div>
+
+            <div class="catalog__item-img">
+              <img src="./img/production/matchistic_1.png" alt="production img">
+            </div>
+
+            <div class="catalog__item-price">
+              <div class="newPrice">
+                790р
+              </div>
+              <div class="oldPrice">
+                990р
+              </div>
+
+              <div class="basket__catalog">
+                <div class="basket__catalog-img">
+                  <a href="#">
+                    <img src="./img/svg/basket__catalog.svg" alt="basket__catalog">
+                  </a>
+                </div>
+
+                <div class="basket__catalog-government">
+                  <span>+</span>
+                  <span class="price-counter">3</span>
+                  <span>-</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog__item-h">
+              <h5>Мачистик</h5>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End catalog -->
+
+  <!-- Start Device -->
+
+  <section class="device" style="
+        background: url(./img/bg/header__bg-device.png) top center
+          no-repeat;
+        background-size: cover;
+    ">
+    <div class="container">
+
+      <div class="device__wrapper">
+        <div class="device__h primary-h">
+          <h2>о девайсе</h2>
+        </div>
+
+        <div class="device__text">
+          <div class="device__text-p">
+            <p>Мачистик – прибор для очистки кожи. Он компактен и не займет много места в ванной комнате. Состоит из
+              удобной
+              нескользящей ручки и очищающей насадки.</p>
+          </div>
+          <div class="device__text-p">
+            <p>С помощью «Мачистика» можно провести механическую чистку лица дома не хуже, чем в салоне. Это дешевле,
+              быстрее и
+              безопаснее в условиях пандемии.</p>
+          </div>
+          <div class="device__text-p">
+            <p>Чистка лица с помощью «Мачистик» – запатентованная технология, разработанная и апробированная нашей
+              компанией.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="container__fluid">
+      <!-- Start Wrapper -->
+      <div class="device__itemWrapper">
+        <div class="device__item">
+          <img src="./img/matchistik__device.png" alt="device">
+        </div>
+
+        <div class="device__item-mobile">
+          <img src="./img/matchistik__device-mobile.png" alt="device">
+        </div>
+
+
+      </div>
+
+      <!-- END Wrapper -->
+    </div>
+  </section>
+
+  <!-- End Device -->
+
+  <!-- Start Opportunity -->
+
+  <section class="opportunity">
+    <div class="container">
+      <div class="opportunity__wpapper">
+        <div class="opportunity__h primary-h">
+          <h2>НОВЫЕ <br />ВОЗМОЖНОСТИ</h2>
+        </div>
+
+        <div class="opportunity__box">
+          <div class="opportunity__box-item opportunity__item">
+            <div class="opportunity__item-img">
+              <img src="./img/svg/simple.svg" alt="simple icon">
+            </div>
+            <div class="opportunity__item-h">
+              <h2>ПРОСТОТА</h2>
+            </div>
+            <div class="opportunity__item-p">
+              <p>Использовать Мачистик можно дома. Процедура займет не более 15 минут</p>
+            </div>
+          </div>
+          <div class="opportunity__box-item opportunity__item">
+            <div class="opportunity__item-img">
+              <img src="./img/svg/safe.svg" alt="safe icon">
+            </div>
+            <div class="opportunity__item-h">
+              <h2>БЕЗОПАСНОСТЬ</h2>
+            </div>
+            <div class="opportunity__item-p">
+              <p>Не раздражает кожу и не вызывает дискомфорт</p>
+            </div>
+          </div>
+          <div class="opportunity__box-item opportunity__item">
+            <div class="opportunity__item-img">
+              <img src="./img/svg/clean.svg" alt="clean icon">
+            </div>
+            <div class="opportunity__item-h">
+              <h2>ЧИСТОТА</h2>
+            </div>
+            <div class="opportunity__item-p">
+              <p>Очищает кожу от черных точек и предотвращает появление новых</p>
+            </div>
+          </div>
+          <div class="opportunity__box-item opportunity__item">
+            <div class="opportunity__item-img">
+              <img src="./img/svg/aid.svg" alt="aid icon">
+            </div>
+            <div class="opportunity__item-h">
+              <h2>УХОД</h2>
+            </div>
+            <div class="opportunity__item-p">
+              <p>Улучшает цвет лица, придает ему ухоженный вид, помогает справиться с шелушениями и постакне</p>
+            </div>
+          </div>
+          <div class="opportunity__box-item opportunity__item">
+            <div class="opportunity__item-img">
+              <img src="./img/svg/lifting.svg" alt="lifting icon">
+            </div>
+            <div class="opportunity__item-h">
+              <h2>ЛИФТИНГ</h2>
+            </div>
+            <div class="opportunity__item-p">
+              <p>Подтягивает и повышает упругость кожи за счет массажа</p>
+            </div>
+          </div>
+          <div class="opportunity__box-item opportunity__item">
+            <div class="opportunity__item-img">
+              <img src="./img/svg/economic.svg" alt="economic icon">
+            </div>
+            <div class="opportunity__item-h">
+              <h2>ЭКОНОМИЯ</h2>
+            </div>
+            <div class="opportunity__item-p">
+              <p>Подходит для многоразового использования и не имеет срока годности. До 8 раз дешевле похода к
+                косметологу</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Opportunity -->
+
+  <!-- Start Spectacular  -->
+
+  <section class="spectacular">
+    <div class="container">
+      <div class="spectacular__wrapper"
+        style="background: #405649 url(./img/bg/spectacular__bg.png) bottom center no-repeat; background-size: cover;">
+        <div class="spectacular__h primary-h">
+          <h2>ЭФФЕКТИВНО ПРОТИВ</h2>
+        </div>
+
+
+
+        <div class="spectacular__box">
+          <div class="spectacular__box-item spectacular__item">
+            <div class="spectacular__item-h">
+              <h6>Черные точки</h6>
+            </div>
+            <div class="spectacular__item-p">
+              <p>Когда кожное сало, смешанное с пылью, на воздухе окисляется и приобретает темный цвет</p>
+            </div>
+          </div>
+          <div class="spectacular__box-item spectacular__item">
+            <div class="spectacular__item-h">
+              <h6>Шелушения кожи</h6>
+            </div>
+            <div class="spectacular__item-p">
+              <p>Проблемная сухая кожа
+                из-за неправильного
+
+                функционирования
+
+                сальных желез</p>
+            </div>
+          </div>
+          <div class="spectacular__box-item spectacular__item">
+            <div class="spectacular__item-h">
+              <h6>Закупорки пор</h6>
+            </div>
+            <div class="spectacular__item-p">
+              <p>Россыпи мелких бугорков,
+                бывают плотно закрытыми
+                и в некоторых случаях
+                воспаляются</p>
+            </div>
+          </div>
+          <div class="spectacular__box-item spectacular__item">
+            <div class="spectacular__item-h">
+              <h6>Белые угри</h6>
+            </div>
+            <div class="spectacular__item-p">
+              <p>Плотные образования
+                возникающие из-за
+                повышения продукции
+                кожного сала</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Spectacular  -->
+
+  <!-- Start Exemple -->
+  <section class="exemple">
+    <div class="container">
+      <div class="exemple__wrapper">
+        <div class="exemple__h primary-h">
+          <h2>РЕАЛЬНЫЕ ПРИМЕРЫ</h2>
+        </div>
+
+
+        <div class="exemple__box">
+          <div class="exemple__box-top exemple__box-item">
+            <div class="exemple__item"></div>
+            <div class="exemple__item"></div>
+            <div class="exemple__item"></div>
+            <div class="exemple__item"></div>
+          </div>
+          <div class="exemple__box-video">
             <a href="#" class="video__img-link">
               <img src="./img/bg/video__bg.png" alt="video__bg">
               <div class="video__item-btn">
@@ -151,491 +678,329 @@
             </a>
           </div>
         </div>
+
       </div>
-    </header>
+    </div>
+  </section>
+  <!-- End Exemple -->
 
-    <!-- End HEADER + Video -->
 
-    <!-- Start catalog -->
+  <!-- Start Use -->
 
-    <section class="catalog">
-      <div class="container">
-        <div class="catalog__wrapper">
-          <div class="catalog__h primary-h">
-            <h2>КАТАЛОГ</h2>
-          </div>
-          <div class="catalog__box">
-            <div class="catalog__box-item catalog__item">
-              <div class="catalog__item-status">
-                <div class="New">
-                  <h6>New</h6>
-                </div>
-                <div class="Sale">
-                  <h6>Sale</h6>
-                </div>
-              </div>
-          
-              <div class="catalog__item-img">
-                <img src="./img/production/matchistic_1.png" alt="production img">
-              </div>
-          
-              <div class="catalog__item-price">
-                <div class="newPrice">
-                  790р
-                </div>
-                <div class="oldPrice">
-                  990р
-                </div>
-          
-                <div class="basket__catalog">
-                  <div class="basket__catalog-img">
-                    <a href="#">
-                      <img src="./img/svg/basket__catalog.svg" alt="basket__catalog">
-                    </a>
-                  </div>
-          
-                  <div class="basket__catalog-government">
-                    <span>+</span>
-                    <span class="price-counter">3</span>
-                    <span>-</span>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="catalog__item-h">
-                <h5>Мачистик</h5>
-              </div>
-          
-            </div>
-            <div class="catalog__box-item catalog__item">
-              <div class="catalog__item-status">
-                <div class="New">
-                  <h6>New</h6>
-                </div>
-                <div class="Sale">
-                  <h6>Sale</h6>
-                </div>
-              </div>
-          
-              <div class="catalog__item-img">
-                <img src="./img/production/matchistic_1.png" alt="production img">
-              </div>
-          
-              <div class="catalog__item-price">
-                <div class="newPrice">
-                  790р
-                </div>
-                <div class="oldPrice">
-                  990р
-                </div>
-          
-                <div class="basket__catalog">
-                  <div class="basket__catalog-img">
-                    <a href="#">
-                      <img src="./img/svg/basket__catalog.svg" alt="basket__catalog">
-                    </a>
-                  </div>
-          
-                  <div class="basket__catalog-government">
-                    <span>+</span>
-                    <span class="price-counter">3</span>
-                    <span>-</span>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="catalog__item-h">
-                <h5>Мачистик</h5>
-              </div>
-          
-            </div>
-            <div class="catalog__box-item catalog__item">
-              <div class="catalog__item-status">
-                <div class="New">
-                  <h6>New</h6>
-                </div>
-                <div class="Sale">
-                  <h6>Sale</h6>
-                </div>
-              </div>
-          
-              <div class="catalog__item-img">
-                <img src="./img/production/matchistic_1.png" alt="production img">
-              </div>
-          
-              <div class="catalog__item-price">
-                <div class="newPrice">
-                  790р
-                </div>
-                <div class="oldPrice">
-                  990р
-                </div>
-          
-                <div class="basket__catalog">
-                  <div class="basket__catalog-img">
-                    <a href="#">
-                      <img src="./img/svg/basket__catalog.svg" alt="basket__catalog">
-                    </a>
-                  </div>
-          
-                  <div class="basket__catalog-government">
-                    <span>+</span>
-                    <span class="price-counter">3</span>
-                    <span>-</span>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="catalog__item-h">
-                <h5>Мачистик</h5>
-              </div>
-          
-            </div>
-            <div class="catalog__box-item catalog__item">
-              <div class="catalog__item-status">
-                <div class="New">
-                  <h6>New</h6>
-                </div>
-                <div class="Sale">
-                  <h6>Sale</h6>
-                </div>
-              </div>
-          
-              <div class="catalog__item-img">
-                <img src="./img/production/matchistic_1.png" alt="production img">
-              </div>
-          
-              <div class="catalog__item-price">
-                <div class="newPrice">
-                  790р
-                </div>
-                <div class="oldPrice">
-                  990р
-                </div>
-          
-                <div class="basket__catalog">
-                  <div class="basket__catalog-img">
-                    <a href="#">
-                      <img src="./img/svg/basket__catalog.svg" alt="basket__catalog">
-                    </a>
-                  </div>
-          
-                  <div class="basket__catalog-government">
-                    <span>+</span>
-                    <span class="price-counter">3</span>
-                    <span>-</span>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="catalog__item-h">
-                <h5>Мачистик</h5>
-              </div>
-          
-            </div>
-            <div class="catalog__box-item catalog__item">
-              <div class="catalog__item-status">
-                <div class="New">
-                  <h6>New</h6>
-                </div>
-                <div class="Sale">
-                  <h6>Sale</h6>
-                </div>
-              </div>
-          
-              <div class="catalog__item-img">
-                <img src="./img/production/matchistic_1.png" alt="production img">
-              </div>
-          
-              <div class="catalog__item-price">
-                <div class="newPrice">
-                  790р
-                </div>
-                <div class="oldPrice">
-                  990р
-                </div>
-          
-                <div class="basket__catalog">
-                  <div class="basket__catalog-img">
-                    <a href="#">
-                      <img src="./img/svg/basket__catalog.svg" alt="basket__catalog">
-                    </a>
-                  </div>
-          
-                  <div class="basket__catalog-government">
-                    <span>+</span>
-                    <span class="price-counter">3</span>
-                    <span>-</span>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="catalog__item-h">
-                <h5>Мачистик</h5>
-              </div>
-          
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End catalog -->
-
-    <!-- Start Device -->
-    
-    <section class="device" style="
-        background: url(./img/bg/header__bg-device.png) top center
+  <section class="use" style="
+        background: url(./img/bg/use__bg.png) top center
           no-repeat;
         background-size: cover;
     ">
-      <div class="container">
-        
-        <div class="device__wrapper">
-          <div class="device__h primary-h">
-            <h2>о девайсе</h2>
-          </div>
-          
-          <div class="device__text">
-            <div class="device__text-p">
-              <p>Мачистик – прибор для очистки кожи. Он компактен и не займет много места в ванной комнате. Состоит из удобной
-                нескользящей ручки и очищающей насадки.</p>
-              </div>
-              <div class="device__text-p">
-                <p>С помощью «Мачистика» можно провести механическую чистку лица дома не хуже, чем в салоне. Это дешевле, быстрее и
-                  безопаснее в условиях пандемии.</p>
-            </div>
-            <div class="device__text-p">
-              <p>Чистка лица с помощью «Мачистик» – запатентованная технология, разработанная и апробированная нашей компанией.
-              </p>
-            </div>
-          </div>
+    <div class="container">
+      <div class="use__wrapper">
+        <div class="use__h primary-h">
+          <h2>КАК <br />
+            ИСПОЛЬЗОВАТЬ?</h2>
         </div>
-        
-      </div>
-      <div class="container__fluid">
-        <!-- Start Wrapper -->
-        <div class="device__itemWrapper">
-          <div class="device__item">
-            <img src="./img/matchistik__device.png" alt="device">
-          </div>
-          
-          
-          <div class="device__item-elements">
-            <div class="device__element">
-              <div class="device__element-circle device__element-circle-first">
-                <div class="element__circle"></div>
-              </div>
-              <div class="device__element-text">
-                <p>Не выскальзывает из рук</p>
-              </div>
-              <div class="device__element-verticle device__element-verticle-first"></div>
-            </div>
-            <div class="device__element">
-              <div class="device__element-circle device__element-circle-midle">
-                <div class="element__circle "></div>
-              </div>
-              <div class="device__element-text">
-                <p>Экологически чистые материалы</p>
-              </div>
-              <div class="device__element-verticle device__element-verticle-midle"></div>
-            </div>
-            <div class="device__element">
-              <div class="device__element-circle device__element-circle-last">
-                <div class="element__circle"></div>
-              </div>
-              <div class="device__element-text">
-                <p>Комфортное скольжение</p>
-              </div>
-              <div class="device__element-verticle device__element-verticle-last"></div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- END Wrapper -->
-      </div>
-    </section>
-    
-    <!-- End Device -->
-    
-    <!-- Start Opportunity -->
-    
-    <section class="opportunity">
-      <div class="container">
-        <div class="opportunity__wpapper">
-          <div class="opportunity__h primary-h">
-            <h2>НОВЫЕ <br/>ВОЗМОЖНОСТИ</h2>
-          </div>
-
-          <div class="opportunity__box">
-            <div class="opportunity__box-item opportunity__item">
-              <div class="opportunity__item-img">
-                <img src="./img/svg/simple.svg" alt="simple icon">
-              </div>
-              <div class="opportunity__item-h">
-                <h2>ПРОСТОТА</h2>
-              </div>
-              <div class="opportunity__item-p">
-                <p>Использовать Мачистик можно дома. Процедура займет не более 15 минут</p>
-              </div>
-            </div>
-            <div class="opportunity__box-item opportunity__item">
-              <div class="opportunity__item-img">
-                <img src="./img/svg/safe.svg" alt="safe icon">
-              </div>
-              <div class="opportunity__item-h">
-                <h2>БЕЗОПАСНОСТЬ</h2>
-              </div>
-              <div class="opportunity__item-p">
-                <p>Не раздражает кожу и не вызывает дискомфорт</p>
-              </div>
-            </div>
-            <div class="opportunity__box-item opportunity__item">
-              <div class="opportunity__item-img">
-                <img src="./img/svg/clean.svg" alt="clean icon">
-              </div>
-              <div class="opportunity__item-h">
-                <h2>ЧИСТОТА</h2>
-              </div>
-              <div class="opportunity__item-p">
-                <p>Очищает кожу от черных точек и предотвращает появление новых</p>
-              </div>
-            </div>
-            <div class="opportunity__box-item opportunity__item">
-              <div class="opportunity__item-img">
-                <img src="./img/svg/aid.svg" alt="aid icon">
-              </div>
-              <div class="opportunity__item-h">
-                <h2>УХОД</h2>
-              </div>
-              <div class="opportunity__item-p">
-                <p>Улучшает цвет лица, придает ему ухоженный вид, помогает справиться с шелушениями и постакне</p>
-              </div>
-            </div>
-            <div class="opportunity__box-item opportunity__item">
-              <div class="opportunity__item-img">
-                <img src="./img/svg/lifting.svg" alt="lifting icon">
-              </div>
-              <div class="opportunity__item-h">
-                <h2>ЛИФТИНГ</h2>
-              </div>
-              <div class="opportunity__item-p">
-                <p>Подтягивает и повышает упругость кожи за счет массажа</p>
-              </div>
-            </div>
-            <div class="opportunity__box-item opportunity__item">
-              <div class="opportunity__item-img">
-                <img src="./img/svg/economic.svg" alt="economic icon">
-              </div>
-              <div class="opportunity__item-h">
-                <h2>ЭКОНОМИЯ</h2>
-              </div>
-              <div class="opportunity__item-p">
-                <p>Подходит для многоразового использования и не имеет срока годности. До 8 раз дешевле похода к косметологу</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- End Opportunity -->
-    
-    <!-- Start Spectacular  -->
-
-    <section class="spectacular">
-      <div class="container">
-        <div class="spectacular__wrapper" style="background: #405649 url(./img/bg/spectacular__bg.png) bottom center no-repeat; background-size: cover;">
-          <div class="spectacular__h primary-h">
-            <h2>ЭФФЕКТИВНО ПРОТИВ</h2>
-          </div>
 
 
-
-          <div class="spectacular__box">
-            <div class="spectacular__box-item spectacular__item">
-              <div class="spectacular__item-h">
-                <h6>Черные точки</h6>
-              </div>
-              <div class="spectacular__item-p">
-                <p>Когда кожное сало, смешанное с пылью, на воздухе окисляется и приобретает темный цвет</p>
-              </div>
-            </div>
-            <div class="spectacular__box-item spectacular__item">
-              <div class="spectacular__item-h">
-                <h6>Шелушения кожи</h6>
-              </div>
-              <div class="spectacular__item-p">
-                <p>Проблемная сухая кожа
-                из-за неправильного
-                
-                функционирования
-                
-                сальных желез</p>
-              </div>
-            </div>
-            <div class="spectacular__box-item spectacular__item">
-              <div class="spectacular__item-h">
-                <h6>Закупорки пор</h6>
-              </div>
-              <div class="spectacular__item-p">
-                <p>Россыпи мелких бугорков,
-                бывают плотно закрытыми
-                и в некоторых случаях
-                воспаляются</p>
-              </div>
-            </div>
-            <div class="spectacular__box-item spectacular__item">
-              <div class="spectacular__item-h">
-                <h6>Белые угри</h6>
-              </div>
-              <div class="spectacular__item-p">
-                <p>Плотные образования
-                возникающие из-за
-                повышения продукции
-                кожного сала</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Spectacular  -->
-    
-    <!-- Start Exemple -->
-    <section class="exemple">
-      <div class="container">
-        <div class="exemple__wrapper">
-          <div class="exemple__h primary-h">
-            <h2>РЕАЛЬНЫЕ ПРИМЕРЫ</h2>
-          </div>
-
-
-          <div class="exemple__box">
-            <div class="exemple__box-top exemple__box-item">
-              <div class="exemple__item"></div>
-              <div class="exemple__item"></div>
-              <div class="exemple__item"></div>
-              <div class="exemple__item"></div>
-            </div>
-            <div class="exemple__box-video">
-              <a href="#" class="video__img-link">
-                <img src="./img/bg/video__bg.png" alt="video__bg">
-                <div class="video__item-btn">
-                  <div class="video__item-triangle">
+        <div class="use__box">
+          <div class="use__info">
+            <div class="use__info-steps">
+              <div class="use__step">
+                <div class="device__element-circle device__element-circle-firsе use__step-circle use__step-first">
+                  <div class="element__circle"></div>
+                </div>
+                <div class="use__step-box">
+                  <div class="use__step-h">
+                    <h6>Шаг 1</h6>
+                  </div>
+                  <div class="use__step-p">
+                    <p>Очистите кожу лица обычным средством для умывания: гелем, пенкой, мицеллярной водой, тоником.
+                      После умойтесь водой</p>
                   </div>
                 </div>
-              </a>
+              </div>
+              <div class="use__step">
+                <div class="device__element-circle device__element-circle-firsе use__step-circle">
+                  <div class="element__circle"></div>
+                </div>
+                <div class="use__step-box">
+                  <div class="use__step-h">
+                    <h6>Шаг 2</h6>
+                  </div>
+                  <div class="use__step-p">
+                    <p>Хорошо распарьте кожу над паром, в сауне* или с помощью ингалятора
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="use__step">
+                <div class="device__element-circle device__element-circle-firsе use__step-circle">
+                  <div class="element__circle"></div>
+                </div>
+                <div class="use__step-box">
+                  <div class="use__step-h">
+                    <h6>Шаг 3</h6>
+                  </div>
+                  <div class="use__step-p">
+                    <p>Проведите насадкой прибора по коже, очищая и массируя ее
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="use__step">
+                <div class="device__element-circle device__element-circle-firsе use__step-circle">
+                  <div class="element__circle"></div>
+                </div>
+                <div class="use__step-box">
+                  <div class="use__step-h">
+                    <h6>Шаг 4</h6>
+                  </div>
+                  <div class="use__step-p">
+                    <p>Промокните кожу салфеткой
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="use__step">
+                <div class="device__element-circle device__element-circle-firsе use__step-circle use__step-last">
+                  <div class="element__circle"></div>
+                </div>
+                <div class="use__step-box">
+                  <div class="use__step-h">
+                    <h6>Шаг 5</h6>
+                  </div>
+                  <div class="use__step-p">
+                    <p>Нанесите ухаживающий крем или маску
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="use__info-text">
+              <p>Сначала лицо будет немного красным – это нормально. Просто не делайте процедуру перед выходом из дома
+              </p>
+
+              <p>Повторяйте такую чистку от 1 до 4 раз в месяц в зависимости от типа кожи (жирная чаще, сухая и
+                чувствительная – реже)</p>
+
+              <p>*Если используете прибор в сауне или бане, берите его с собой в парилку только в последний момент —
+                иначе он будет слишком горячим!</p>
             </div>
           </div>
-          
+        </div>
+        <div class="use__img">
+          <img src="./img/matchistik__package.png" alt="package">
         </div>
       </div>
-    </section>
-    <!-- End Exemple -->
-    
 
-    <script src="./js/common.js"></script>
-  </body>
+    </div>
+    </div>
+  </section>
+
+  <!-- End Use -->
+
+
+  <!-- Start question-->
+  <section class="question">
+    <div class="container">
+      <div class="question-wrapper">
+        <div class="question__h primary-h">
+          <h2>ВОПРОС-ОТВЕТ</h2>
+        </div>
+
+        <div class="question__box">
+          <div class="question__box-accordion">
+            <div class="accordion">
+              <div class="accordion__item">
+                <a class="toggle" href="javascript:void(0);"><span>Зачем нужен Мачистик?</span>
+                  <img src="./img/svg/arrow-right.svg" alt=""></a>
+                <div class="inner">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ratione, molestias omnis voluptas
+                    alias expedita fuga totam optio ducimus corrupti.</p>
+                </div>
+              </div>
+
+              <div class="accordion__item">
+                <a class="toggle" href="javascript:void(0);"><span>Зачем нужен Мачистик?</span>
+                  <img src="./img/svg/arrow-right.svg" alt=""></a>
+                <div class="inner">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ratione, molestias omnis voluptas
+                    alias expedita fuga totam optio ducimus corrupti.</p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <a class="toggle" href="javascript:void(0);"><span>Зачем нужен Мачистик?</span>
+                  <img src="./img/svg/arrow-right.svg" alt=""></a>
+                <div class="inner">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ratione, molestias omnis voluptas
+                    alias expedita fuga totam optio ducimus corrupti.</p>
+                </div>
+              </div>
+
+              <div class="accordion__item">
+                <a class="toggle" href="javascript:void(0);"><span>Зачем нужен Мачистик?</span>
+                  <img src="./img/svg/arrow-right.svg" alt=""></a>
+                <div class="inner">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ratione, molestias omnis voluptas
+                    alias expedita fuga totam optio ducimus corrupti.</p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <a class="toggle" href="javascript:void(0);"><span>Зачем нужен Мачистик?</span>
+                  <img src="./img/svg/arrow-right.svg" alt=""></a>
+                <div class="inner">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ratione, molestias omnis voluptas
+                    alias expedita fuga totam optio ducimus corrupti.</p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <a class="toggle" href="javascript:void(0);"><span>Зачем нужен Мачистик?</span>
+                  <img src="./img/svg/arrow-right.svg" alt=""></a>
+                <div class="inner">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ratione, molestias omnis voluptas
+                    alias expedita fuga totam optio ducimus corrupti.</p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <a class="toggle" href="javascript:void(0);"><span>Зачем нужен Мачистик?</span>
+                  <img src="./img/svg/arrow-right.svg" alt=""></a>
+                <div class="inner">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ratione, molestias omnis voluptas
+                    alias expedita fuga totam optio ducimus corrupti.</p>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="question__box-img">
+            <img src="./img/bg/accordion__bg.png" alt="accordion__bg">
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+  <!-- End question-->
+
+
+
+  <!-- Start complex -->
+  <section class="complex">
+    <div class="container">
+      <div class="complex__wrapper" style="
+        background: url(./img/bg/complex__bg.png) center center
+          no-repeat;
+        background-size: cover;
+    ">
+
+        <div class="complex__h">
+          <h2>Мачистик
+            в комплекте
+            с защитным
+            гелем</h2>
+        </div>
+        <div class="complex__text">
+          <p>Купи девайс и получи в подарок методичку с тремя самыми результативными способами косметического ухода от
+            МАЧИСТИК</p>
+        </div>
+        <button class="primary-btn">
+          <a href="#">
+            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.7654 13.4814H8.32207C5.7102 13.4814 3.59204 11.3553 3.59204 8.75135V2.56409H14.788C16.2851 2.56409 17.4955 3.78243 17.4955 5.27151V8.75135C17.5034 11.3553 15.3773 13.4814 12.7654 13.4814ZM4.70686 3.67891V8.75135C4.70686 10.7421 6.33132 12.3666 8.32207 12.3666H12.7654C14.7562 12.3666 16.3806 10.7421 16.3806 8.75135V5.27151C16.3806 4.39558 15.664 3.67891 14.788 3.67891H4.70686Z"
+                fill="#3A5244" />
+              <path
+                d="M13.3069 15C12.9964 15 12.7495 15.2469 12.7495 15.5574C12.7495 15.868 12.9964 16.1148 13.3069 16.1148C13.6175 16.1148 13.8643 15.868 13.8643 15.5574C13.8643 15.2548 13.6175 15 13.3069 15Z"
+                fill="#3A5244" />
+              <path
+                d="M7.78861 15C7.47805 15 7.2312 15.2469 7.2312 15.5574C7.2312 15.868 7.47805 16.1148 7.78861 16.1148C8.09917 16.1148 8.34602 15.868 8.34602 15.5574C8.33806 15.2548 8.09121 15 7.78861 15Z"
+                fill="#3A5244" />
+              <path
+                d="M4.1495 5.47059C3.83894 5.47059 3.59209 5.22373 3.59209 4.91318V2.70742C3.59209 1.83149 2.87542 1.11482 1.99948 1.11482H1.16337C0.85281 1.11482 0.605957 0.867969 0.605957 0.557411C0.605957 0.246854 0.85281 0 1.16337 0H1.99948C3.49653 0 4.70691 1.21834 4.70691 2.70742V4.91318C4.70691 5.21577 4.46005 5.47059 4.1495 5.47059Z"
+                fill="#3A5244" />
+            </svg>
+            <span>ЗАКАЗАТЬ</span>
+          </a>
+        </button>
+
+      </div>
+    </div>
+  </section>
+  <!-- End complex -->
+
+
+  <!-- Start footer -->
+  <section class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="header__menu-contacts footer__contacts">
+          <a href="tel:83832583888">8 (383) 258 38 88</a>
+          <a href="mailto:machistika@gmail.com">machistika@gmail.com</a>
+        </div>
+
+        <div class="header__menu-box footer__menu">
+          <ul>
+            <li class="header__menu-item"><a href="#">Каталог</a></li>
+            <li class="header__menu-item"><a href="#">Machistik</a></li>
+            <li class="header__menu-item">
+              <a href="#">Новые возможности</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#">Эффективно против</a>
+            </li>
+            <li class="header__menu-item"><a href="#">До / После</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <a href="#">
+            <img src="./img/svg/facebook.svg" alt="facebook icon">
+          </a>
+          <a href="#">
+            <img src="./img/svg/youtube.svg" alt="youtube icon">
+          </a>
+          <a href="#">
+            <img src="./img/svg/vk.svg" alt="vk icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End footer -->
+
+  <footer class="copywrite">
+    <div class="container">
+      <div class="copywrite__wrapper">
+        <div class="copywrite__box">
+          <div class="copywrite__instruction">
+            <a href="#">
+              <span>Инструкция по применению .pdf </span>
+            </a>
+          </div>
+          <div class="copywrite__instruction">
+            <a href="#">
+              <span>Противопоказания</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="copywrite__created">
+          <p>Сайт разработан</p>
+          <div class="copywrite__created-box">
+            <a href="#">solovey.ru</a>
+            <!-- <a href="#">Alex Bortnitskyi</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+  <script src="./js/common.js"></script>
+</body>
+
 </html>
